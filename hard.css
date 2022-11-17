@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,900&subset=cyrillic");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i&subset=cyrillic');
+
+@keyframes header_anim {
+  from {
+    transform: translateX(-120%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 820px) {
+  table {
+    border: 0;
+  }
+
+  table::before{
+    width: 100%;
+    margin-left: auto;
+  margin-right: auto;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid #ddd;
+    text-align: left;
+  }
+
+  table td {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    border-bottom: 1px dotted #ccc;
+    border-right: 1px solid transparent;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 70%;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 200;
+  text-align: center;
+}
+
+h2 {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 100;
+  font-style: oblique;
+}
+
+h3 {
+    position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 100;
+}
+
+p {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.table-wrap {
+  text-align: center;
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  padding-bottom: 2rem;
+}
+
+table {
+  border: 1px solid #ccc;
+  width: 100%;
+  margin:0;
+  padding:0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table tr {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  font-weight: 100;
+}
+
+table th {
+  color: #fff;
+  background-color:cadetblue;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+caption{
+    font-weight: 700;
+    color: blue;
+}
+
+blockquote {
+    font-style: oblique;
+    font-size: x-large;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+}
